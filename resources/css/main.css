@@ -1,0 +1,8 @@
+@tailwind preflight;
+@tailwind components;
+
+button {
+    @apply py-2 px-4 border border-grey-light rounded;
+}
+
+@tailwind utilities;
