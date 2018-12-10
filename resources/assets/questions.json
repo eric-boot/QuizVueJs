@@ -2,6 +2,24 @@
   "title": "Quiz over de Middeleeuwen",
   "questions": [
     {
+      "text": "Sorteer de volgende gebeurtenissen op volgorde in tijd van verleden naar heden",
+      "type": "sort",
+      "answers": [
+        "invoeren van het leenstelsel",
+        "kruistochten",
+        "Honderdjarige Oorlog",
+        "opkomst van het humanisme",
+        "uitvinding van de boekdrukkunst"
+      ],
+      "answer": [
+        "invoeren van het leenstelsel",
+        "kruistochten",
+        "Honderdjarige Oorlog",
+        "uitvinding van de boekdrukkunst",
+        "opkomst van het humanisme"
+      ]
+    },
+    {
       "text": "Leven wij nu in de Middeleeuwen?",
       "type": "tf",
       "answer": "f"
@@ -20,7 +38,7 @@
         "ca. 1500 tot ca. 1700 n.Chr.",
         "ca. 1500 tot ca. 500 v.Chr."
       ],
-      "answer": "ca. 500 voor tot ca. 500 n.Chr."
+      "answer": "ca. 500 tot ca. 1500 n.Chr."
     }
   ]
 }

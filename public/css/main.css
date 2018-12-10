@@ -522,13 +522,23 @@ table {
 }
 
 button {
+  border-width: 1px;
+  border-color: #3490dc;
+  font-weight: 700;
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-width: 1px;
-  border-color: #dae1e7;
   border-radius: .25rem;
+}
+
+button.blue {
+  background-color: #3490dc;
+  color: #fff;
+}
+
+button.blue:hover {
+  background-color: #2779bd;
 }
 
 .list-reset {

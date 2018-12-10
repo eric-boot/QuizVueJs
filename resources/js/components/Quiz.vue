@@ -3,7 +3,7 @@
     <div v-if="introStage">
       <h1>Welkom bij: {{title}}</h1>
       
-      <button class="btn btn-blue" @click="startQuiz">START!</button>
+      <button @click="startQuiz">START!</button>
     </div>
     
     <div v-if="questionStage">
@@ -66,8 +66,23 @@ export default {
       },
       handleResults() {
         console.log('handle results');
-        this.questions.forEach((a, index) => {
-          if(this.answers[index] === a.answer) this.correct++;        
+        this.questions.forEach((question, questionNumber) => {
+          let yourAnswers = this.answers[questionNumber];
+          let questionAnswers = question.answer;
+
+          if(yourAnswers === questionAnswers) {
+            this.correct++;
+          }
+
+          if(yourAnswers instanceof Array) {
+            if (yourAnswers.length != questionAnswers.length) return;
+
+            for (let i = 0; i < yourAnswers.length; ++i) {
+              if (yourAnswers[i] !== questionAnswers[i]) return;
+            }
+            this.correct++;
+          }
+
         });
         this.perc = ((this.correct / this.questions.length)*100).toFixed(2);
         console.log(this.correct+' '+this.perc);
